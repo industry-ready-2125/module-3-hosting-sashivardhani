@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify Sign In</title>
+    <style>
+        section div{
+            margin-left: 40%;
+            margin-right: 30%;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            width: 120px;
+            height: 43px;
+            margin-top: 25px;
+        }
+        .card{
+            width: 296px;
+            height: 240px;
+            padding: 20px 26px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            border: 1px solid #040404;
+            border-radius: 4px;
+        }
+        .card h1{
+            align-items: center;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .card label{
+            font-size: 13px;
+           
+            padding-bottom: 2px;
+            font-weight: 200;
+        }
+        .card input{
+            width: 272px;
+            height: 24px;
+           
+            margin-top: 3px;
+            background-color: #a09999;
+            border: 1px solid  #a09999;
+            border-radius: 3px;
+        }
+        .card button{
+            width: 282px;
+            height: 31px;
+            margin-top: 15px;
+            background-color: #0e0d0d;
+            border: 1px solid #0c0b0b;
+            border-top-color: #090808;
+            background-image: linear-gradient(#f1f0eff6,#fffefc);
+            border-radius: 3px;
+        }
+        .card p,.card p a{
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        a {
+            color: #026c40;
+            text-decoration: none;
+        }
+        .card a{
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .icon::before{
+            display: inline-block;
+            content: "";
+            border-top: 4px solid transparent;
+            border-left: 4px solid #949494;
+            border-bottom: 4px solid transparent;
+        }
+        .breck p{
+            color: #0b0b0b;
+            font-size: 12px;
+            font-weight: 400;
+            position: relative;
+            display: inline-block;
+            background-color: #fff;
+            padding: 0 11px 0 7px;
+        }
+        .breck::before,.breck::after{
+            content: "";
+            position: relative;
+            top: 5px;
+            display: inline-block;
+            width: 120px;
+            border-top: 1px solid #e7e7e7;
+        }
+        .btn{
+            width: 340px;
+            height: 31px;
+            margin: 15px auto;
+            background-color: #e7e7e7;
+            background-image: linear-gradient(#f9f9fa,#e7e9ec);
+            border: 1px solid #a6a6a6;
+            border-top-color: #10ad08;
+            border-radius: 3px;
+            margin-left: 40%;
+        }
+        .foot-panel4{
+            background-color: #ccc;
+            color: black;
+            height: 100px;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+        .pages{
+            padding-top: 25px;
+        }
+        .pages a {
+            margin-right: 20px; /* Adjust the value to increase or decrease spacing */
+        }
+        .copyright{
+            padding-top: 5px;
+        }
+        .form{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <section>
+        <div class="logo">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.BOHmbTgH9JIQq0ydIQSPcgHaEK&pid=Api&P=0&h=180" alt="Spotify Logo">
+        </div>
+        <div class="card">
+            <h1>Sign in</h1>
+            <div class="form">
+                <label for="">Email or username</label>
+                <input type="text">
+                <label for="">password</label>
+                <input type="text">
+                <button>Login</button>
+            </div>
+            <p> Remember Me</p>
+        </div>
+        <div class="breck">
+            <p>DON'T HAVE AN ACCOUNT? Signup </p>
+        </div> 
+    </section>
+</div>
+</body>
+</html>
