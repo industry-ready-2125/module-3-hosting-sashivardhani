@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spotify Sign In</title>
+    <title>Amazon Sign In</title>
     <style>
         section div{
             margin-left: 40%;
@@ -20,9 +20,9 @@
             align-items: center;
         }
         .logo img{
-            width: 120px;
-            height: 43px;
-            margin-top: 25px;
+            width: 103px;
+            height: 33px;
+            margin-top: 15px;
         }
         .card{
             width: 296px;
@@ -31,7 +31,7 @@
             display: flex;
             justify-content: space-around;
             flex-direction: column;
-            border: 1px solid #040404;
+            border: 1px solid #ddd;
             border-radius: 4px;
         }
         .card h1{
@@ -50,18 +50,18 @@
             height: 24px;
            
             margin-top: 3px;
-            background-color: #a09999;
-            border: 1px solid  #a09999;
+            background-color: #fff;
+            border: 1px solid black;
             border-radius: 3px;
         }
         .card button{
             width: 282px;
             height: 31px;
             margin-top: 15px;
-            background-color: #0e0d0d;
-            border: 1px solid #0c0b0b;
-            border-top-color: #090808;
-            background-image: linear-gradient(#f1f0eff6,#fffefc);
+            background-color: #f0791e;
+            border: 1px solid #a6a6a6;
+            border-top-color: #949494;
+            background-image: linear-gradient(#f7da90,#e2b33b);
             border-radius: 3px;
         }
         .card p,.card p a{
@@ -69,7 +69,7 @@
             line-height: 1.5;
         }
         a {
-            color: #026c40;
+            color: #0066c0;
             text-decoration: none;
         }
         .card a{
@@ -84,7 +84,7 @@
             border-bottom: 4px solid transparent;
         }
         .breck p{
-            color: #0b0b0b;
+            color: #767676;
             font-size: 12px;
             font-weight: 400;
             position: relative;
@@ -107,7 +107,7 @@
             background-color: #e7e7e7;
             background-image: linear-gradient(#f9f9fa,#e7e9ec);
             border: 1px solid #a6a6a6;
-            border-top-color: #10ad08;
+            border-top-color: #949494;
             border-radius: 3px;
             margin-left: 40%;
         }
@@ -137,23 +137,37 @@
     <div>
     <section>
         <div class="logo">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.BOHmbTgH9JIQq0ydIQSPcgHaEK&pid=Api&P=0&h=180" alt="Spotify Logo">
+            <img src="data:image/png;base64,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" alt="Amazon Logo">
         </div>
         <div class="card">
             <h1>Sign in</h1>
             <div class="form">
-                <label for="">Email or username</label>
+                <label for="">Email or Phone Number</label>
                 <input type="text">
-                <label for="">password</label>
-                <input type="text">
-                <button>Login</button>
+                <button>Continue</button>
             </div>
-            <p> Remember Me</p>
+            <p>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <a href="#" class="icon">Need Help?</a>
         </div>
         <div class="breck">
-            <p>DON'T HAVE AN ACCOUNT? Signup </p>
-        </div> 
+            <p>New to Amazon</p>
+        </div>
+        <div class="btn">
+            <button>Create your Amazon Account</button>
+        </div>
     </section>
 </div>
+    <footer>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use & Sale</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>                      
+        </div>
+    </footer>
 </body>
 </html>
